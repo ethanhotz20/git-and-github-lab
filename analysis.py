@@ -2,11 +2,11 @@ import numpy as np
 import pandas as pd
 
 df = pd.read_csv("data.csv")    
-print("NRows: ", len(df))
-print("M_Price: ", df["Price"].mean())
-print("Med_Price: ", df["Price"].median())
+print("Number of transactions: ", len(df))
+print("Mean Transaction Price: ", df["Price"].mean())
+print("Median Transaction Price: ", df["Price"].median())
 
 # Print the largest sale 
-print("Max_Price: ", df["Price"].max())
+print("Largest Transaction: ", df["Price"].max())
 # Print the smallest sale
-print("Min_Price: ", df["Price"].min())
+print("Smallest Transaction: ", df["Price"].min())
